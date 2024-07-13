@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.micro</groupId>
-  <artifactId>spring-cloud-eureka</artifactId>
+  <artifactId>spring-cloud-try</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spring-cloud-eureka</name>
+  <name>spring-cloud-try</name>
   <url>https://maven.apache.org</url>
 
   <properties>
