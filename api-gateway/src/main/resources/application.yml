@@ -1,0 +1,31 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      routes:
+        - id: test
+          uri: lb://hello-service
+          predicates:
+            - Path=/test
+            - Method=GET
+
+        - id: hello
+          uri: lb://hello-service
+          predicates:
+            - Path=/hello
+            - Method=GET
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL:http://localhost:8761/eureka}

@@ -1,0 +1,36 @@
+networks:
+  app-net:
+    driver: bridge
+
+services:
+  service-registry:
+    networks:
+      - app-net
+    build: service-registry
+    ports:
+      - "8761:8761"
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://service-registry:8761/eureka
+
+  hello-service:
+    networks:
+      - app-net
+    depends_on:
+      - service-registry
+    build: hello-service
+    ports:
+      - "8080"
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://service-registry:8761/eureka
+
+  api-gateway:
+    networks:
+      - app-net
+    depends_on:
+      - service-registry
+      - hello-service
+    build: api-gateway
+    ports:
+      - "8765:8765"
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://service-registry:8761/eureka
