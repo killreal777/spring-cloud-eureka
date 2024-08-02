@@ -5,10 +5,10 @@
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-new/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hello-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hello-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/service-registry/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/service-registry/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testt/src/main/java" charset="UTF-8" />

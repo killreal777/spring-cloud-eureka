@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>service-registry</artifactId>
+    <artifactId>eureka-server</artifactId>
     <version>${revision}</version>
 
     <dependencies>
@@ -25,7 +25,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>org.demo.serviceregistry.ServiceRegistryApplication</mainClass>
+                    <mainClass>org.demo.eurekaserver.EurekaServerApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

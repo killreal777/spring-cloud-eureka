@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>service-registry</module>
+        <module>eureka-server</module>
         <module>hello-service</module>
         <module>api-gateway</module>
     </modules>
